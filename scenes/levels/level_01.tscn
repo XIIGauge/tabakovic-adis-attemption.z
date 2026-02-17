@@ -40,6 +40,11 @@ size = Vector3(50, 1, 50)
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.33454514, 4.8861923, -76.99827)
 size = Vector3(49.997192, 1, 21.816528)
 
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/Foor7" unique_id=379220275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.642397, 0.09918213, -4.475097)
+operation = 2
+size = Vector3(3.7762299, 1.6571045, 4.926758)
+
 [node name="Foor11" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1339312752]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0.33454514, 6.554058, -85.01933)
 size = Vector3(49.997192, 1, 14.994476)
@@ -125,28 +130,28 @@ transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -
 size = Vector3(50.52707, 1, 21.816528)
 
 [node name="Foor17" type="CSGBox3D" parent="CSGCombiner3D" unique_id=2040212268]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 88.53041, 4.8861923, -80.36865)
-size = Vector3(49.997192, 1, 21.816528)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 88.53041, 24.661203, -77.25086)
+size = Vector3(49.997192, 1, 61.25055)
 
 [node name="Foor18" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1541038002]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 88.53041, 4.8861923, -130.3378)
-size = Vector3(49.997192, 1, 21.816528)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 88.53041, 25.171213, -127.22001)
+size = Vector3(49.997192, 1, 60.23053)
 
 [node name="Foor19" type="CSGBox3D" parent="CSGCombiner3D" unique_id=740545528]
-transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 63.337814, 4.8861923, -105.59786)
-size = Vector3(50.52707, 1, 21.816528)
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 63.337814, 24.865564, -102.48007)
+size = Vector3(50.52707, 1, 60.841827)
 
 [node name="Foor20" type="CSGBox3D" parent="CSGCombiner3D" unique_id=224777902]
-transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 113.0852, 4.8861923, -105.59786)
-size = Vector3(50.52707, 1, 21.816528)
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 113.0852, 24.985666, -102.48007)
+size = Vector3(50.52707, 1, 60.601624)
 
 [node name="Foor5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1904097617]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.22612, -0.48740292, -1.905323)
 size = Vector3(50, 1, 50)
 
 [node name="Foor6" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1671060997]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.850044, -0.48740292, -104.73093)
-size = Vector3(50, 1, 48.489136)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.850044, -5.1008053, -102.09583)
+size = Vector3(50, 1, 49.45453)
 
 [node name="Foor2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1384587114]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02040863, 6.6583385, 3.562561)
@@ -298,8 +303,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.361755, 6.4790664, -47.99
 size = Vector3(3.7735596, 1, 62.807487)
 
 [node name="CrossBoard2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1505025907]
-transform = Transform3D(0.78420264, 0, 0.6205047, 0, 1, 0, -0.6205047, 0, 0.78420264, 44.700516, 1.6348481, -52.18843)
-size = Vector3(3.7735596, 1, 67.9426)
+transform = Transform3D(0.83994186, 0, 0.5426761, 0, 1, 0, -0.5426761, 0, 0.83994186, 43.311016, 1.6348481, -54.339066)
+size = Vector3(3.7735596, 1, 73.06351)
+
+[node name="Cover1Side" type="CSGBox3D" parent="CSGCombiner3D/CrossBoard2" unique_id=1549864470]
+transform = Transform3D(0.80289036, 0, -0.5961268, 0, 1, 0, 0.5961268, 0, 0.80289036, -1.3293533, -0.21005249, -34.96102)
+operation = 2
+size = Vector3(2.4107666, 1.8104858, 6.093628)
 
 [node name="CrossBoard3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=825741185]
 transform = Transform3D(0.99994105, 0, -0.010855686, 0, 1, 0, 0.010855686, 0, 0.99994105, 111.8735, 6.4790664, -52.86464)
