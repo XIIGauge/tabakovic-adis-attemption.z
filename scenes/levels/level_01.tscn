@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://p4kid6p7u0wu"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_m802k"]
+[ext_resource type="PackedScene" uid="uid://dwdv01np3xako" path="res://assets/meshes/Pack of health .glb" id="2_i2aat"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m802k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -217,3 +218,6 @@ size = Vector3(2.748352, 1.8104858, 6.093628)
 [node name="CrossBoard3" type="CSGBox3D" parent="Bridges" unique_id=825741185]
 transform = Transform3D(0.99994105, 0, -0.010855686, 0, 1, 0, 0.010855686, 0, 0.99994105, 111.8735, 6.4790664, -52.86464)
 size = Vector3(3.7735596, 1, 53.058037)
+
+[node name="Pack of health " parent="." unique_id=1375532911 instance=ExtResource("2_i2aat")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.580632, 0.01260066, -9.014894)
