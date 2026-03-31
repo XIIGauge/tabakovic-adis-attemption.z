@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c7i2u4fyh372o"]
+
+[ext_resource type="PackedScene" uid="uid://dgo75pb882ae0" path="res://assets/dungeon_assets/asset scene/wall_t_split.tscn" id="1_ks8xn"]
+[ext_resource type="PackedScene" uid="uid://bqtdxgj5uhhwm" path="res://assets/dungeon_assets/asset scene/stoned_half_wall.tscn" id="2_hlbch"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ilkhl"]
+size = Vector3(15.802368, 0.79296875, 9.655273)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4ddun"]
+size = Vector3(15.794434, 2.7642822, 0.5234375)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nltsx"]
+size = Vector3(15.385864, 2.7543945, 0.5234375)
+
+[node name="Stone Bridge" type="StaticBody3D" unique_id=1065610063]
+
+[node name="Wall T-Split" parent="." unique_id=1472956988 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, 0.2658795, 0, 2.0253143)
+
+[node name="Wall T-Split2" parent="." unique_id=702715276 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, 0.2658795, 0, -3.6469288)
+
+[node name="Stoned Half Wall" parent="." unique_id=1376955832 instance=ExtResource("2_hlbch")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, 0.23371953, 0, -0.9216267)
+
+[node name="Wall T-Split3" parent="." unique_id=834938117 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -3.6516085, 0, 2.0253143)
+
+[node name="Wall T-Split4" parent="." unique_id=1367157373 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -3.6516085, 0, -3.6469288)
+
+[node name="Stoned Half Wall2" parent="." unique_id=1543549822 instance=ExtResource("2_hlbch")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -3.6837685, 0, -0.9216267)
+
+[node name="Wall T-Split5" parent="." unique_id=685002280 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -7.6245837, 0, 2.0253143)
+
+[node name="Wall T-Split6" parent="." unique_id=1123286158 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -7.6245837, 0, -3.6469288)
+
+[node name="Stoned Half Wall3" parent="." unique_id=1162845491 instance=ExtResource("2_hlbch")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -7.656744, 0, -0.9216267)
+
+[node name="Wall T-Split7" parent="." unique_id=1951761018 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -11.609446, 0, 2.0253143)
+
+[node name="Wall T-Split8" parent="." unique_id=1863886420 instance=ExtResource("1_ks8xn")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -11.609446, 0, -3.6469288)
+
+[node name="Stoned Half Wall4" parent="." unique_id=58962117 instance=ExtResource("2_hlbch")]
+transform = Transform3D(-4.371139e-08, -1, 0, -4.371139e-08, 1.9106855e-15, 1, -1, 4.371139e-08, -4.371139e-08, -11.641606, 0, -0.9216267)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1738726836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6523867, -0.103515625, -0.7931618)
+shape = SubResource("BoxShape3D_ilkhl")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1613737193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6751146, 1.422487, 2.0171533)
+shape = SubResource("BoxShape3D_4ddun")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=164283226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.885747, 1.4175432, -3.649345)
+shape = SubResource("BoxShape3D_nltsx")

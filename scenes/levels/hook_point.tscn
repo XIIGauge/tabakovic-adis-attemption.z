@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://iu6ek8h8jh7h"]
+
+[ext_resource type="Script" uid="uid://cjfgdgps1fle6" path="res://assets/Scripts Folder/hook_point.gd" id="1_j03ty"]
+[ext_resource type="PackedScene" uid="uid://ktorw7x3bm1d" path="res://scenes/levels/sparkle_system.tscn" id="2_cwkt3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cwkt3"]
+radius = 32.118034
+
+[node name="Hook Point" type="Area3D" unique_id=408765077]
+collision_mask = 2
+script = ExtResource("1_j03ty")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=677261048]
+shape = SubResource("SphereShape3D_cwkt3")
+
+[node name="Sparkle system" parent="." unique_id=527431056 instance=ExtResource("2_cwkt3")]
+visible = false
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
