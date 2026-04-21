@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://tvoqrxmymj5p"]
+
+[ext_resource type="PackedScene" uid="uid://c7lsc4kmxbt55" path="res://assets/meshes/Wrist Grapple Hook.glb" id="1_7ighf"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xdbom"]
+radius = 0.35864258
+height = 0.71728516
+
+[node name="Wrist Grappling Hoke" type="Area3D" unique_id=1201315145]
+
+[node name="Wrist Grapple Hook" parent="." unique_id=474872260 instance=ExtResource("1_7ighf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018737435, 0, -0.020676613)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1283676110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0570457, 0.26635742, 0)
+shape = SubResource("CapsuleShape3D_xdbom")

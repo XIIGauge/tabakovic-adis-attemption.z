@@ -83,14 +83,16 @@ func _unhandled_input(event: InputEvent) -> void:
 			disable_freefly()
 
 func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("Action 2") and current_hook_point:
+	if Input.is_action_just_pressed("Action 2") and is_swinging:
+		is_swinging = false
+	elif Input.is_action_just_pressed("Action 2") and current_hook_point:
 		is_swinging = true
 		
 	if is_swinging:
 		grap_swing(delta)
 	else : 
 		movement(delta)
-
+	move_and_slide()
 ## Rotate us to look around.
 ## Base of controller rotates around y (left/right). Head rotates around x (up/down).
 ## Modifies look_rotation based on rot_input, then resets basis and rotates by look_rotation.
@@ -149,6 +151,7 @@ func check_input_mappings():
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
 
+#the state the player is in when swinging
 func grap_swing(delta:float):
 	var onGrapPoint = current_hook_point.position.distance_to(global_position) < 1
 	
@@ -195,5 +198,3 @@ func movement(delta:float):
 	
 	
 	
-	# Use velocity to actually move
-	move_and_slide()

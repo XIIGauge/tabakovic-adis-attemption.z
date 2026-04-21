@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bt5ro2wqu1gx8" path="res://assets/dungeon_assets/asset scene/stoned_arched_wall.tscn" id="12_tyxjt"]
 [ext_resource type="PackedScene" uid="uid://b3yro5qdyxdyl" path="res://assets/dungeon_assets/asset scene/stoned_arched_window.tscn" id="13_07lms"]
 [ext_resource type="PackedScene" uid="uid://cm6jwgroql8wq" path="res://assets/dungeon_assets/asset scene/stoned_floor.tscn" id="13_gi8m4"]
+[ext_resource type="PackedScene" uid="uid://tvoqrxmymj5p" path="res://scenes/levels/wrist_grappling_hoke.tscn" id="13_iu1m7"]
 [ext_resource type="PackedScene" uid="uid://bjkl4guxihkvv" path="res://assets/dungeon_assets/asset scene/wooden_floor.tscn" id="13_tyxjt"]
 [ext_resource type="PackedScene" uid="uid://5pxpmwto2xo6" path="res://assets/dungeon_assets/building/wall_archedwindow_gated.glb" id="14_07lms"]
 [ext_resource type="PackedScene" uid="uid://c7i2u4fyh372o" path="res://assets/dungeon_assets/asset scene/stone_bridge.tscn" id="14_gi8m4"]
@@ -43,7 +44,7 @@ light_color = Color(0.87, 0.7714, 0.5742, 1)
 shadow_enabled = true
 
 [node name="ProtoController" parent="." unique_id=1530697500 instance=ExtResource("1_m802k")]
-transform = Transform3D(0.03484723, 0, 0.9993927, 0, 1, 0, -0.9993927, 0, 0.03484723, -11.533358, 13.880503, -48.088463)
+transform = Transform3D(0.03484723, 0, 0.9993927, 0, 1, 0, -0.9993927, 0, 0.03484723, 13.602064, 1.5444851, -103.00534)
 
 [node name="Building1Floors1" type="Node3D" parent="." unique_id=816169430]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.98230696, 0)
@@ -1888,6 +1889,9 @@ transform = Transform3D(12.641806, 0, 0, 0, 4.7683716e-07, -3.046205, 0, 12.5480
 
 [node name="Wall Doorway Open" parent="Building2" unique_id=1454639564 instance=ExtResource("4_r72dd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.221905, -1.0162256, -0.00945282)
+
+[node name="Wrist Grappling Hoke" parent="Building2" unique_id=1201315145 instance=ExtResource("13_iu1m7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.861187, 0.30634165, -10.677238)
 
 [node name="Building2 Stone Floors" type="Node3D" parent="." unique_id=502565032]
 transform = Transform3D(1.016457, 0, 0, 0, 1, 0, 0, 0, 1, -12.181012, 3.7264628, -80.55554)
